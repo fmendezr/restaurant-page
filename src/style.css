@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'restaurant';
+    src: url("./restaurant-font.ttf");
+}
+
 * { 
     margin: 0;
     padding: 0;
     border: none;
+    font-family: "restaurant";
 }
 
 #header {
