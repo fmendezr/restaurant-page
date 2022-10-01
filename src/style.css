@@ -8,6 +8,7 @@
     padding: 0;
     border: none;
     font-family: "restaurant";
+    font-size: 10px;
 }
 
 #header {
@@ -18,7 +19,18 @@
     background-color: rgba(0, 0, 0, 0.782);
 }
 
+#header > h1 {
+    font-size: 7rem;
+}
+
+nav {
+    display: flex;
+}
+
 .navBtn {
     border: none;
-    background-color: red;
+    padding: 1.25rem 2.25rem;
+    background: none;
+    font-size: 2rem;
+    font-weight: bold;
 }

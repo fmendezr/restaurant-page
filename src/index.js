@@ -25,7 +25,7 @@ const componentHeader = () => {
     title.textContent = "Hattori's";
     homeBtn.textContent = "Home";
     menuBtn.textContent = "Menu";
-    contactBtn.textContent = "Contact Us"
+    contactBtn.textContent = "Contact"
 
     // add style 
     header.setAttribute("id", "header");
