@@ -1,3 +1,4 @@
+import "./style.css";
 
 const componentHeader = () => {
 
@@ -11,9 +12,6 @@ const componentHeader = () => {
     const homeBtn = document.createElement("button");
     const menuBtn = document.createElement("button");
     const contactBtn = document.createElement("button");
-    
-    // add attributes 
-    header.setAttribute("id", "header");
 
     // insert elements into DOM 
     container.appendChild(header);
@@ -28,6 +26,12 @@ const componentHeader = () => {
     homeBtn.textContent = "Home";
     menuBtn.textContent = "Menu";
     contactBtn.textContent = "Contact Us"
+
+    // add style 
+    header.setAttribute("id", "header");
+    homeBtn.classList.add("navBtn");
+    menuBtn.classList.add("navBtn");
+    contactBtn.classList.add("navBtn");
 }
 
 componentHeader();
