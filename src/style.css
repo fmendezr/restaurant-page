@@ -21,7 +21,7 @@ html {
 
 #content {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto minmax(calc(100vh - 192px), auto) auto;
 }
 
 /* header */
@@ -54,12 +54,12 @@ nav {
 /* main Home Page */
 
 main {
-    margin: 4rem 0rem;
+    margin: 4rem auto;
     width: 290px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.500);
@@ -68,6 +68,7 @@ main {
 
 .txt {
     font-size: 2rem;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -75,4 +76,13 @@ main {
     border-radius: 20rem;
     width: 290px;
     height: 290px;
+}
+
+/* footer */
+
+#footer {
+    padding: 1.2rem;
+    box-shadow: 0 0 0 100vmax rgba(255, 255, 255, 0.500);
+    clip-path: inset(0 -100vmax);
+    background-color:  rgba(255, 255, 255, 0.500);
 }

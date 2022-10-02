@@ -28,7 +28,7 @@ const componentHeader = () => {
     menuBtn.textContent = "Menu";
     contactBtn.textContent = "Contact"
 
-    // add style 
+    // add attributes 
     header.setAttribute("id", "header");
     homeBtn.classList.add("navBtn");
     menuBtn.classList.add("navBtn");
@@ -42,31 +42,59 @@ const componentMainHomePage = () => {
 
     // create elements 
     const main = document.createElement("main");
-    const text1 = document.createElement("p");
-    const text2 = document.createElement("p");
+    const txt1 = document.createElement("p");
+    const txt2 = document.createElement("p");
     const img = new Image();
     img.src = profilePic;
-    const text3 = document.createElement("p");
+    const txt3 = document.createElement("p");
 
     // insert element into HTML
     container.appendChild(main);
-    main.appendChild(text1);
-    main.appendChild(text2);
+    main.appendChild(txt1);
+    main.appendChild(txt2);
     main.appendChild(img);
-    main.appendChild(text3);
+    main.appendChild(txt3);
 
     // add text content 
-    text1.textContent = "Demon Hanzō's cuisine ";
-    text2.textContent = "In  Edo since 1592";
-    text3.textContent = '"Wake up from death and return to life"';
+    txt1.textContent = "Demon Hanzō's cuisine ";
+    txt2.textContent = "In  Edo since 1592";
+    txt3.textContent = '"Wake up from death and return to life"';
 
-    // add style 
+    // add attributes 
     img.setAttribute("id", "profilePic");
-    text1.classList.add("txt");
-    text2.classList.add("txt");
-    text3.classList.add("txt");
+    txt1.classList.add("txt");
+    txt2.classList.add("txt");
+    txt3.classList.add("txt");
 }
 
+const componentFooter = () => {
+
+    // fetch the contianer 
+    const container = document.getElementById("content");
+
+    // create elements 
+    const footer = document.createElement("div");
+    const footerTxt = document.createElement("div")
+    const footerLink = document.createElement("a");
+    const icon = document.createElement("i");
+
+    // insert elements into HTML 
+    container.appendChild(footer);
+    footer.appendChild(footerTxt);
+    footerTxt.appendChild(footerLink);
+    footerLink.appendChild(icon);
+
+    // add text content 
+    footerTxt.textContent = "Copyright © 2022 fmendezr "
+
+    // add attributes 
+    footer.setAttribute("id", "footer");
+    footerTxt.classList.add("txt");
+    footerLink.setAttribute("href", "https://github.com/fmendezr");
+    icon.classList.add("fa", "fa-github");
+    icon.setAttribute("style", "font-size:21px")
+}
 
 componentHeader();
 componentMainHomePage();
+componentFooter();
