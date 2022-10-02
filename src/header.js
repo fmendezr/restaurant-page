@@ -1,4 +1,4 @@
-export default componentHeader = () => {
+export default function componentHeader() {
 
     // fetch container
     const container =  document.getElementById("content");

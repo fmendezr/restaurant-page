@@ -3,25 +3,14 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: {
-    index: {
-      import: './src/index.js'
-    },
-    header: {
-      import: './src/header.js'
-    },
-    footer: {
-      import: './src/footer.js'
-    },
-    home: {
-      import: './src/main.js'
-    }
+    header: "./src/header.js",
+    mainElements: "./src/mainElements.js",
+    footer: "./src/footer.js",
+    index: "./src/index.js",
   },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-  },
-  optimization: {
-    runtimeChunk: "single",
   },
   module: {
     rules: [

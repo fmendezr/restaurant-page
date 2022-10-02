@@ -1,6 +1,6 @@
 import profilePic from "./img/home/Hattori_Hanzo.jpeg";
 
-const componentHome = () => {
+ const componentHome = () => {
 
     // fetch container
     const container =  document.getElementById("content");
@@ -30,6 +30,8 @@ const componentHome = () => {
    txt1.classList.add("txt");
    txt2.classList.add("txt");
    txt3.classList.add("txt");
+
+   console.log("it's working")
 }
 
-export {componentHome}
+export {componentHome};

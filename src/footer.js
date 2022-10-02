@@ -1,4 +1,4 @@
-export default componentFooter = () => {
+export default function componentFooter() {
 
     // fetch the contianer 
     const container = document.getElementById("content");

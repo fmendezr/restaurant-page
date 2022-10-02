@@ -1,4 +1,3 @@
-"use strict";
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -7,7 +6,9 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunkrestaurant_page"] = self["webpackChunkrestaurant_page"] || []).push([["header"],{
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/header.js":
 /*!***********************!*\
@@ -15,13 +16,51 @@
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (componentHeader = () => {\n\n    // fetch container\n    const container =  document.getElementById(\"content\");\n\n    // create elements \n    const header = document.createElement(\"div\");\n    const title = document.createElement(\"h1\");\n    const navBar = document.createElement(\"nav\");\n    const homeBtn = document.createElement(\"button\");\n    const menuBtn = document.createElement(\"button\");\n    const contactBtn = document.createElement(\"button\");\n\n    // insert elements into DOM \n    container.appendChild(header);\n    header.appendChild(title);\n    header.appendChild(navBar);\n    navBar.appendChild(homeBtn);\n    navBar.appendChild(menuBtn);\n    navBar.appendChild(contactBtn);\n\n    // add text content \n    title.textContent = \"Hattori's\";\n    homeBtn.textContent = \"Home\";\n    menuBtn.textContent = \"Menu\";\n    contactBtn.textContent = \"Contact\"\n\n    // add attributes \n    header.setAttribute(\"id\", \"header\");\n    homeBtn.classList.add(\"navBtn\");\n    menuBtn.classList.add(\"navBtn\");\n    contactBtn.classList.add(\"navBtn\");\n});\n\n\n//# sourceURL=webpack://restaurant-page/./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ componentHeader)\n/* harmony export */ });\nfunction componentHeader() {\n\n    // fetch container\n    const container =  document.getElementById(\"content\");\n\n    // create elements \n    const header = document.createElement(\"div\");\n    const title = document.createElement(\"h1\");\n    const navBar = document.createElement(\"nav\");\n    const homeBtn = document.createElement(\"button\");\n    const menuBtn = document.createElement(\"button\");\n    const contactBtn = document.createElement(\"button\");\n\n    // insert elements into DOM \n    container.appendChild(header);\n    header.appendChild(title);\n    header.appendChild(navBar);\n    navBar.appendChild(homeBtn);\n    navBar.appendChild(menuBtn);\n    navBar.appendChild(contactBtn);\n\n    // add text content \n    title.textContent = \"Hattori's\";\n    homeBtn.textContent = \"Home\";\n    menuBtn.textContent = \"Menu\";\n    contactBtn.textContent = \"Contact\"\n\n    // add attributes \n    header.setAttribute(\"id\", \"header\");\n    homeBtn.classList.add(\"navBtn\");\n    menuBtn.classList.add(\"navBtn\");\n    contactBtn.classList.add(\"navBtn\");\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/header.js?");
 
 /***/ })
 
-},
-/******/ __webpack_require__ => { // webpackRuntimeModules
-/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./src/header.js"));
-/******/ }
-]);
+/******/ 	});
+/************************************************************************/
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/header.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	
+/******/ })()
+;
