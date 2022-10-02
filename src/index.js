@@ -4,7 +4,5 @@ import {componentHome, componentMenu} from "./mainElements.js";
 import componentFooter from "./footer.js";
 
 componentHeader();
-componentHome();
+componentMenu();
 componentFooter();
-
- componentMenu();
