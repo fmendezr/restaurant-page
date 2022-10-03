@@ -51,6 +51,13 @@ nav {
     font-weight: bold;
 }
 
+.navBtn.active{
+    transition-timing-function: ease-in-out ;
+    transition-duration: 100ms;
+    border-top: 4px solid rgb(255, 0, 81);
+    border-bottom: 4px solid black;
+}
+
 /* footer */
 
 #footer {
@@ -122,7 +129,7 @@ main.contact {
     align-items: center;
     justify-content: space-around;
     margin: 2rem auto;
-    background-color: rgba(255, 255, 255, 0.550);
+    background-color: rgba(255, 255, 255, 0.650);
     width: 300px;
 }
 

@@ -28,6 +28,10 @@ export default function componentHeader() {
     // add attributes 
     header.setAttribute("id", "header");
     homeBtn.classList.add("navBtn");
+    homeBtn.classList.add("active")
     menuBtn.classList.add("navBtn");
     contactBtn.classList.add("navBtn");
+    homeBtn.id = "homeBtn";
+    menuBtn.id = "menuBtn"
+    contactBtn.id = "contactBtn";
 }
