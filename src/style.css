@@ -102,7 +102,7 @@ main.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.550)
+    background-color: rgba(255, 255, 255, 0.550);
 }
 
 .menuItemImg {
@@ -112,4 +112,35 @@ main.menu {
 
 .foodName {
     font-size: 2rem;
+}
+
+/* main contact page */ 
+
+main.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.550);
+    width: 300px;
+}
+
+#phoneDiv, #directionDiv{
+    display: flex;
+    gap: 1rem;
+}
+
+.icon {
+    height: 3rem;
+     
+}
+
+#phoneNumber, #direction {
+    font-size: 2rem;
+}
+
+#map {
+    height: 17rem;
+    width: 25rem;
 }
